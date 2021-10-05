@@ -1,6 +1,20 @@
 .body{
   background-color:whitesmoke;
 }
+
+.h1{
+color:	#4F4F4F;
+
+}
+
+.p1{
+  color:#363636;
+}
+
+.p2{
+  color: #4F4F4F;
+}
+
 /* Primeira DIV*/
 .logo {
     font-family: 'Times New Roman', Times, serif;
