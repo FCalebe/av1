@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+    <title> Avaliação 1 </title>
+
+</head>
+<body class="body">
+    <!--Primeira Div-->
+    <div class="logo">
+        <img src= "img/logo.png" id="logoini">
+
+        <p>Busologia</p>
+
+        <p>Para receber novidades preencha os campos abaixo:</p>
+        <input type="text" id="name" placeholder="Nome">
+        <input type="email" id="email" placeholder="Email">
+        <input type="button" id="bntEnviar" value="Enviar">
+    </div>
+
+    <!--Segunda Div-->
+    <div class="parceiros">
+        <p><h1> PARCEIROS</h1></p>
+
+       <a href="https://onibusbrasil.com/"><img src= "img/onibus-brasil.png" id="logopar"></a> 
+       <a href="https://www.mobceara.com/"><img src= "img/mob-ceara.png" id="logopar"></a>
+       <a href="https://pt-br.facebook.com/busologia/"><img src= "img/px-onibus.png" id="logopar"></a>
+
+    </div>
+   
+    <!--Terceira Div-->
+<br>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+        <a href="https://www.mobceara.com/2021/10/versatily-recebera-05-onibus-novos-da.html">
+          <div class="numbertext">1 / 3</div>
+          <img src="img/slide1.PNG" style="width:100%">
+          <div class="text">Caption Text</div>
+        </a>
+        </div>
+        
+        <div class="mySlides fade">
+         <a href="https://www.mobceara.com/2021/10/chega-o-apache-vip-v-da-vitoria-o.html"></a>
+          <div class="numbertext">2 / 3</div>
+          <img src="img/slide2.png" style="width:100%">
+          <div class="text">Caption Two</div>
+        </a>
+        </div>
+        
+        <div class="mySlides fade">
+        <a href="https://www.mobceara.com/2021/10/linha-do-dia-648-cidade-nobremessejana.html">
+          <div class="numbertext">3 / 3</div>
+          <img src="img/slide3.PNG" style="width:100%">
+          <div class="text">Caption Three</div>
+        </a>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+        </script>
+    <!--Quarta Div-->
+    <div class="trabalhos">
+        <p> 
+            <h1>NOVIDADES</h1>
+        </p>
+
+        <iframe src="https://www.youtube.com/embed/w6TVJcuftZU" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+         clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+
+         <iframe src="https://www.youtube.com/embed/AqTFL8Yglc0" 
+         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+         clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+   
+         <iframe src="https://www.youtube.com/embed/9-XQuqFe64M"
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+          clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+
+        <iframe src="https://www.youtube.com/embed/RwWJnCc9bwc" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+         clipboard-write; encrypted-media;gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+    </div>  
+
+    <!--Quinta Div-->
+    <div class="feedback">
+        <p id="1">   
+        "Bus News é um portal na qual obtemos informações sobre a busologia"
+        </p id="2">
+        <p>Usuário Nonato</p>
+        
+    </div>  
+    
+    <!--Sexta Div-->
+    <div class="contato">
+        <p><h1>CONTATO:</h1></p>
+        <input type="text" id="name" placeholder="Nome">
+        <input type="email" id="email" placeholder="Email">
+        <input type="button" id="bntEnviar" value="Enviar">
+    </div>
+</body>
+</html>
